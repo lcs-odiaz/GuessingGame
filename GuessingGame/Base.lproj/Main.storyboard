@@ -51,6 +51,7 @@
                                 <state key="normal" title="Guess"/>
                                 <connections>
                                     <action selector="GuessMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lna-E4-Cpx"/>
+                                    <action selector="guessSubmitted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4j0-Hp-e52"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIx-Rh-Gmd">
@@ -70,6 +71,8 @@
                     </view>
                     <connections>
                         <outlet property="guessedNumber" destination="mHU-uH-tN3" id="obT-uM-WqD"/>
+                        <outlet property="labelMessage" destination="yIx-Rh-Gmd" id="Zox-A0-Hxp"/>
+                        <outlet property="textFieldGuess" destination="mHU-uH-tN3" id="WAM-KG-sIW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
