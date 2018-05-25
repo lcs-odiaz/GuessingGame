@@ -68,8 +68,11 @@ class ViewController: UIViewController {
     @IBAction func GuessMade(_ sender: Any) {
         
         print("A guess was made")
-        print(guessedNumber.text)
-        
+        print(textFieldGuess.text)
+        if game.numberToGuess == Int(textFieldGuess.text!)!{
+            print("your guess was right")
+        }
     }
+    
 }
 
