@@ -8,16 +8,32 @@
 
 import Foundation
 
-struct GuessingGame {
-    
-    //property created
+struct GuessingGame
+{
+    //properties
     var numberToGuess : Int
+    //initializer
     
-    //initializer: automatically generates # for user, runs automatically when app opens
-    init() {
-        numberToGuess = Int(arc4random_uniform(501))//generates number between 0 and 500 but not 501
+    init()
+    {
+        //generate random number
+        numberToGuess = Int(arc4random_uniform(501))
+    }  //generate nunber between 0 and 500
+    func checkGuess(guess: Int) -> String
+    {
+        if guess == numberToGuess
+        {
+            
+            return("u did the thing!! i m verry pruod")
+        }
+        else if guess < numberToGuess
+        {
+            return "lol u dum! gues big"
+        }
+        else
+        {
+            return("lol u dum! gues smol")
+        }
     }
-    
-    
     
 }
